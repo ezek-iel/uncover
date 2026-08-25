@@ -12,34 +12,40 @@
 
 ## The Problem
 
-LLM chat apps answer confidently — and often **wrong**, with no way to check their work. When you're researching something that matters (a breaking news story, a product decision, a study), you need more than a confident paragraph. You need:
+LLMs answer their questions with an air of certainty, but they are also often flat-out wrong, and there's no way to verify that what they are saying is accurate. If you are investigating something that truly matters (a developing news story, a purchasing decision, an academic study), an LLM's paragraph isn't good enough. What you need are the:
 
-- **Evidence** — did the model actually look anything up, or is it guessing?
-- **Reasoning** — *how* did it get from question to answer?
-- **Timeliness** — most models are trained on old data and can't see what changed today.
+- **Evidence**: Does the LLM seem to know for a fact that it actually looked something up, or could it simply be guessing?
+- **Reasoning**: How does the LLM come to this conclusion based on your question?
+- **Timeliness**: Most LLM models, trained on older data sets, don’t know that it’s 2024 and don't know what’s just happened in the last hour or last year.
 
-Typical chat UIs hide all of this. The thinking happens in a black box, citations are an afterthought, and outdated knowledge is presented with the same confidence as verified facts.
+Most of the chat UIs on existing platforms just hide the evidence, reasoning, and timeline information and provide the LLM’s confident answer – without transparency.
 
 ## The Idea
 
-**Uncover flips the black box open.** Instead of hiding the model's work, it broadcasts it in real time:
+Uncover opens the black box. Rather than conceal what the model is doing, it reveals it:
 
-1. You ask a question.
-2. The model **thinks out loud** — its reasoning streams onto the screen as it happens.
-3. When it decides it needs fresh information, it **calls a live web-search tool**, and you see exactly what it searched for.
-4. The final answer streams in as **rendered markdown**, grounded in what it found.
+1. You make a request.
 
-You don't just get the answer — you get the **whole investigation**, live.
+2. The model thinks out loud - its reasoning pours out as it works - which is streamed.
+3. When the model feels that a piece of evidence is missing, it invokes a live web-search tool and you see the exact search query it made.
+4. Then the final answer is streamed as rendered markdown, based on what was retrieved.
+
+You don't just get the answer, you get the entire investigation, live.
 
 ## Key Features
+- ⚡ **True token streaming**: Answers, reasoning, and tool actions come over the wire as SSE token-by-token, fully preserving paragraphs and markdown structure.  
 
-- ⚡ **True token streaming** — answers, reasoning, and tool activity arrive token-by-token over SSE; paragraphs and markdown structure are preserved losslessly through the wire.
-- 🧠 **Visible reasoning** — the model's chain-of-thought streams in a distinct, muted panel above the answer.
-- 🔎 **Live research tool** — the model can invoke a real web-search API (Parallel AI) mid-conversation; the queries it runs appear as a rendered tool card.
-- 📝 **Markdown answers** — headings, lists, code, quotes, and tables render as the tokens arrive.
-- 💬 **Conversation history** — user questions and assistant answers build into a scrollable thread, with the latest answer streaming in place.
-- ⏳ **Honest loading states** — a spinner in the send button and a "thinking" indicator tell you the model is working; Enter sends, Shift+Enter newlines.
-- 🧭 **Clean app shell** — sidebar navigation with tooltips, searchable thread header, and a branded empty state.
+- 🧠 **Visible reasoning**: A chain-of-thought streams from the model in a different, subdued panel above the answer.  
+
+- 🔎 **Live research tool**: The model can call a real web-search tool (Parallel AI) during the conversation and display rendered tool cards for each query.  
+
+- 📝 **Markdown answers**: Headlines, lists, code snippets, quotes and tables stream and are rendered as tokens arrive.  
+
+- 💬 **Conversation history**: Previous turns of conversation with the model appear in a scrollable list below the ongoing stream.  
+
+- ⏳ **Honest loading states**: You'll see a spinner on the send button and a “thinking” status, and pressing Enter sends, while Shift-Enter inserts a newline.  
+
+- 🧭 **Clean app shell**: Sidebar navigation with tooltips, a searchable question history at the top of the page, and a branded experience when no threads have been created yet.
 
 ## How It Works
 
