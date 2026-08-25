@@ -1,0 +1,16 @@
+# Secrets — never commit API keys
+backend/.env
+
+# Build artifacts
+backend/api
+backend/tmp/
+
+# Logs
+*.log
+
+# Local test artifacts
+backend/question.json
+
+# Local agent tooling (installed skills)
+.agents/
+skills-lock.json

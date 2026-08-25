@@ -3,7 +3,7 @@
     import IconPlus from "~icons/gravity-ui/plus";
 </script>
 
-<div class="top-bar">
+<div class="top-bar ">
     <div class="start"></div>
     <div class="end">
         <button class="btn btn-outline"><IconSearch />Search Thread</button>
@@ -15,7 +15,8 @@
     @reference "../../app.css";
 
     .top-bar {
-        @apply flex items-center justify-between py-4 px-8;
+        @apply flex items-center justify-between py-4 px-8 fixed bg-white z-2;
+        width: calc(100% - 80px)
     }
 
     .end {

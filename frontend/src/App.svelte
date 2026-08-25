@@ -7,7 +7,7 @@
 <div class="flex">
   <Sidebar />
 
-  <main class="w-full min-h-screen overflow-y-scroll">
+  <main class="w-full h-screen overflow-y-scroll">
     <Topbar />
     <Chat/>
   </main>

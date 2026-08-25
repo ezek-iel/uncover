@@ -11,9 +11,18 @@ importers:
       '@fontsource-variable/figtree':
         specifier: ^5.3.0
         version: 5.3.0
+      '@iconify-json/svg-spinners':
+        specifier: ^1.2.4
+        version: 1.2.4
+      '@microsoft/fetch-event-source':
+        specifier: ^2.0.1
+        version: 2.0.1
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.2.1(@types/node@24.13.3)(jiti@2.7.0))
+      markdown-it:
+        specifier: ^15.0.0
+        version: 15.0.0
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -66,6 +75,9 @@ packages:
   '@iconify-json/solar@1.2.7':
     resolution: {integrity: sha512-MfQIlOJl2h17GGV30cuknjz7CmSlVt23f4EKK1QVGZKooqh2GRXMb/KV0A5GgQBBmYCTsIOiXYBJ8t30a2EZQA==}
 
+  '@iconify-json/svg-spinners@1.2.4':
+    resolution: {integrity: sha512-ayn0pogFPwJA1WFZpDnoq9/hjDxN+keeCMyThaX4d3gSJ3y0mdKUxIA/b1YXWGtY9wVtZmxwcvOIeEieG4+JNg==}
+
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
@@ -87,6 +99,9 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@microsoft/fetch-event-source@2.0.1':
+    resolution: {integrity: sha512-W6CLUJ2eBMw3Rec70qrsEW0jOm/3twwJv21mrmj2yORiaVmVYGS4sSS5yUwvQc1ZlDLYGPnClVWmUUMagKNsfA==}
 
   '@oxc-project/types@0.144.0':
     resolution: {integrity: sha512-nuhZIOLuI6TFQ32I/WnUx+SCPY7SdSKwgnFHydAuoS1+Z4BRcaP+RRJmGzl9lw+0OFF7UmaESf7KQRXaNLHypg==}
@@ -314,6 +329,9 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
 
+  argparse@3.0.0:
+    resolution: {integrity: sha512-BOp5NMrHqKxmq/OLr+clzzrRxgOKSLkcjmkWuChp7Irqwn4s74WjOBPIgWfA/HMcBnVkZ5XEuf9uUqzlpfCQ6A==}
+
   aria-query@5.3.1:
     resolution: {integrity: sha512-Z/ZeOgVl7bcSYZ/u/rh0fOpvEpq//LZmdbkXyc7syVzjPAhfOa9ebsdTSjEBDU4vs5nC98Kfduj1uFo0qyET3g==}
     engines: {node: '>= 0.4'}
@@ -350,6 +368,10 @@ packages:
   enhanced-resolve@5.24.5:
     resolution: {integrity: sha512-L1l8TNvomm6UVW5B253AGxQagSQr+vGwhMlrrfRS2qmhx46AMpMVJKQYLvWYbysTMY8VoicOvzHzoHMbyzB+4A==}
     engines: {node: '>=10.13.0'}
+
+  entities@8.0.0:
+    resolution: {integrity: sha512-zwfzJecQ/Uej6tusMqwAqU/6KL2XaB2VZ2Jg54Je6ahNBGNH6Ek6g3jjNCF0fG9EWQKGZNddNjU5F1ZQn/sBnA==}
+    engines: {node: '>=20.19.0'}
 
   esm-env@1.2.2:
     resolution: {integrity: sha512-Epxrv+Nr/CaL4ZcFGPJIYLWFom+YeV1DqMLHJoEd9SYRxNbaFruBwfEX/kkHUJf55j2+TUbmDcmuilbP1TmXHA==}
@@ -540,6 +562,9 @@ packages:
     resolution: {integrity: sha512-WkUDrojuJs0xkgGf2udWxa3yGBRxPtxUkB79i6aCZLRgc7PM8fZe9TosfPDcvEpQZbuFASnHYmRLBLUbmLOIIA==}
     engines: {node: '>= 12.0.0'}
 
+  linkify-it@6.1.0:
+    resolution: {integrity: sha512-wJ/TwpSDTLepCrQoYWYIExIKg5Zchex2Nn5yk2mFnB+6PtdkHtyLx742md9csRjjOnGkKIS/RrbY7l8D6gT9Vw==}
+
   local-pkg@1.2.1:
     resolution: {integrity: sha512-++gUqRDEvcnN6Zhqrr+y/CkVEHhlrR96vZn3nZZPYzMcBUyBtTKzB9NadClFIsIVSsu+3i9tfk/erqy9kAmt7Q==}
     engines: {node: '>=14'}
@@ -552,6 +577,13 @@ packages:
 
   magic-string@1.2.0:
     resolution: {integrity: sha512-ptco+HFxTLgjafSLim2LojBSwfg5feBjd+SqyiwdGkzC38UPdZy3zgrHMI2CoTf5fJL38tbHMYWVzIH8BxGqJw==}
+
+  markdown-it@15.0.0:
+    resolution: {integrity: sha512-Lf8ajvVNdRpzSNB4VegxNy7gjs8gU35l4b4+ET49LrQC5PKYwLZ72u60LeJ9gv3qiaesuYjJWCyVeQmv/QWKQw==}
+    hasBin: true
+
+  mdurl@2.1.0:
+    resolution: {integrity: sha512-1+HBaOx0zi/dQWht8rNv9MYf9qqpqL/kxI0hXImU6Y547zM6Sni8BQibt7ifgMcYtQg41ao3Ivd6cnSM86inpg==}
 
   mlly@1.8.2:
     resolution: {integrity: sha512-d+ObxMQFmbt10sretNDytwt85VrbkhhUA/JBGm1MPaWJ65Cl4wOgLaB1NYvJSZ0Ef03MMEU/0xpPMXUIQ29UfA==}
@@ -591,6 +623,10 @@ packages:
   postcss@8.5.26:
     resolution: {integrity: sha512-u82N74LFzG8ca+dD8puPnplTXoGH4fTPpVGuIbt36G3qvNlkvfD0lEAZSxaly3KX8TS/L1A1gsCEmvKmBcVbkQ==}
     engines: {node: ^10 || ^12 || >=14}
+
+  punycode.js@2.3.1:
+    resolution: {integrity: sha512-uxFIHU0YlHYhDQtV4R9J6a52SLx28BCjT+4ieh7IGbgwVJWO+km431c4yRlREUAsAmt/uMjQUyQHNEPf0M39CA==}
+    engines: {node: '>=6'}
 
   quansync@0.2.11:
     resolution: {integrity: sha512-AifT7QEbW9Nri4tAwR5M/uzpBuqfZf+zwaEM/QkzEjj7NBuFD2rBuy0K3dE+8wltbezDV7JMA0WfnCPYRSYbXA==}
@@ -646,6 +682,9 @@ packages:
     resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  uc.micro@3.0.0:
+    resolution: {integrity: sha512-U3PppEkleoTnIfi8BozMx3yju3qc/L6SwqWo2Sw+54PX+PX0q9I+r1Um5HCmqD7n9VDX5/v3vQH/AjA6deDdtw==}
 
   ufo@1.6.4:
     resolution: {integrity: sha512-JFNbkD1Svwe0KvGi8GOeLcP4kAWQ609twvCdcHxq1oSL8svv39ZuSvajcD8B+5D0eL4+s1Is2D/O6KN3qcTeRA==}
@@ -748,6 +787,10 @@ snapshots:
     dependencies:
       '@iconify/types': 2.0.0
 
+  '@iconify-json/svg-spinners@1.2.4':
+    dependencies:
+      '@iconify/types': 2.0.0
+
   '@iconify/types@2.0.0': {}
 
   '@iconify/utils@3.1.4':
@@ -774,6 +817,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@microsoft/fetch-event-source@2.0.1': {}
 
   '@oxc-project/types@0.144.0': {}
 
@@ -918,6 +963,8 @@ snapshots:
 
   acorn@8.18.0: {}
 
+  argparse@3.0.0: {}
+
   aria-query@5.3.1: {}
 
   axobject-query@4.1.0: {}
@@ -942,6 +989,8 @@ snapshots:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.3
+
+  entities@8.0.0: {}
 
   esm-env@1.2.2: {}
 
@@ -1066,6 +1115,10 @@ snapshots:
       lightningcss-win32-arm64-msvc: 1.33.0
       lightningcss-win32-x64-msvc: 1.33.0
 
+  linkify-it@6.1.0:
+    dependencies:
+      uc.micro: 3.0.0
+
   local-pkg@1.2.1:
     dependencies:
       mlly: 1.8.2
@@ -1081,6 +1134,17 @@ snapshots:
   magic-string@1.2.0:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  markdown-it@15.0.0:
+    dependencies:
+      argparse: 3.0.0
+      entities: 8.0.0
+      linkify-it: 6.1.0
+      mdurl: 2.1.0
+      punycode.js: 2.3.1
+      uc.micro: 3.0.0
+
+  mdurl@2.1.0: {}
 
   mlly@1.8.2:
     dependencies:
@@ -1120,6 +1184,8 @@ snapshots:
       nanoid: 3.3.18
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  punycode.js@2.3.1: {}
 
   quansync@0.2.11: {}
 
@@ -1201,6 +1267,8 @@ snapshots:
       '@popperjs/core': 2.11.8
 
   typescript@6.0.3: {}
+
+  uc.micro@3.0.0: {}
 
   ufo@1.6.4: {}
 
